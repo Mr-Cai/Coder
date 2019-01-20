@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.coder.guoy.recyclerview">
+
+    <!-- 允许程序打开网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 获取当前WiFi接入的状态以及WLAN热点的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 获取网络信息状态，如当前的网络连接是否有效 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/android"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.recyclerview.WelfareActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.recyclerview.SampleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.recyclerview.WelfareAnimationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.tagcloud.TagCloudActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayStatusBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.tablayout.PlayTabLayout"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayTextInputLayout"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayFloatingActionButton"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.coordinator.PlayCoordinatorToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.coordinator.PlayCoordinatorBehavior"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.coordinator.PlayCoordinatorLayout"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.animation.ViewAnimation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.animation.DrawableAnimation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.animation.PropertyAnimation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.holder.RecyclerViewHolder"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.holder.MaterialDesignHolder"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayCardView"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".designpattern.StrategyDesign"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ClassificationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.holder.AnimationHolder"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.bottomsheet.PlayBottomSheetDialog"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.holder.DesignPatternHolder"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.holder.CustomizeHolder"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayTextView"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayMusic"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayShape"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayTouchFeedback"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayRevealEffect"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayCurvedMotion"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayViewStateChange"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayActivityTransitions"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.PlayAnimateVectorDrawables"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.FreeVideoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.ClassificationAdapterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.cache.CacheActivity"/>
+    </application>
+
+</manifest>

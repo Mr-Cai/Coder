@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate1"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate3"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate5"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gank"
+                android:stateListAnimator="@drawable/selector_viewstate6"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
