@@ -36,8 +36,8 @@ public class PlayBottomSheetDialog extends MvvmBaseActivity<ActivityPlayBottomSh
 
     private void initView() {
         View view = View.inflate(this, R.layout.bottom_dialog, null);
-        ImageView man = (ImageView) view.findViewById(R.id.image_man);
-        ImageView women = (ImageView) view.findViewById(R.id.image_women);
+        ImageView man = view.findViewById(R.id.image_man);
+        ImageView women = view.findViewById(R.id.image_women);
         man.setOnClickListener(this);
         women.setOnClickListener(this);
 

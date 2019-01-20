@@ -7,5 +7,5 @@ package com.coder.guoy.recyclerview.designpattern.strategy;
  * @Descrpiton:所有飞行行为类必须实现的接口
  */
 public interface FlyBehavior {
-    public void fly();
+    void fly();
 }

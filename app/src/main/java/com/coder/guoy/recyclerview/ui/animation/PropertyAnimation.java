@@ -88,7 +88,7 @@ public class PropertyAnimation extends MvvmBaseActivity<ActivityPropertyAnimatio
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        RelativeLayout rl = (RelativeLayout) findViewById(R.id.relativelayout);
+        RelativeLayout rl = findViewById(R.id.relativelayout);
         //设置过度动画
         ScaleAnimation scale = new ScaleAnimation(0, 1, 0, 1);
         scale.setDuration(500);

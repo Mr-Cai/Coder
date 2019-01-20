@@ -117,7 +117,7 @@ public class ApiHelper {
      */
     public Observable<GankIoDataBean> getGankIoDataBean(String type, int pre_page, int page) {
         return apiservices.getGankIoData(type, pre_page, page)
-                .compose(RxUtil.<GankIoDataBean>rxSchedulerHelper());
+                .compose(RxUtil.rxSchedulerHelper());
     }
 
 }

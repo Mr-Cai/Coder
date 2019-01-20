@@ -6,11 +6,12 @@ import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.base.MvvmBaseActivity;
 import com.coder.guoy.recyclerview.databinding.ActivityTagCloudBinding;
 import com.coder.guoy.recyclerview.utils.CommonUtils;
+
 /**
- * @Version:v1.0
- * @Author:Guoy
- * @CreateTime:2017年4月20日
- * @Descrpiton:3D球,自定义继承viewgroup实现
+ * @author 蔡凯歌
+ * @version 1.1
+ * @time 2019-1-20
+ * @desc 模仿Soul首页3D星球
  */
 public class TagCloudActivity extends MvvmBaseActivity<ActivityTagCloudBinding> {
 

@@ -7,5 +7,5 @@ package com.coder.guoy.recyclerview.designpattern.strategy;
  * @Descrpiton:
  */
 public interface QuackBehavior {
-    public void quack();
+    void quack();
 }

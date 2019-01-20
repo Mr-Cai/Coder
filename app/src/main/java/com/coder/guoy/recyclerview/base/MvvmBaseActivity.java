@@ -18,15 +18,6 @@ import com.coder.guoy.recyclerview.R;
 import com.coder.guoy.recyclerview.databinding.ActivityBaseMvvmBinding;
 import com.coder.guoy.recyclerview.linstener.PerfectClickListener;
 
-/**
- * @Version:1.0
- * @Author:Guoy
- * @CreateTime:2017年4月7日
- * @Descrpiton:MVVM模式的BaseActivity
- * @UpDateAuthor:
- * @UpDateTime:
- * @UpDataWhat:
- */
 
 public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActivity {
     protected SV bindingView;// 布局view
@@ -47,7 +38,7 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
         //content
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         bindingView.getRoot().setLayoutParams(params);
-        RelativeLayout mContainer = (RelativeLayout) mBaseBinding.getRoot().findViewById(R.id.container);
+        RelativeLayout mContainer = mBaseBinding.getRoot().findViewById(R.id.container);
         mContainer.addView(bindingView.getRoot());
         getWindow().setContentView(mBaseBinding.getRoot());
 
@@ -77,16 +68,12 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
      * 设置ToolBar的返回
      */
     private void setToolBar() {
-        mBaseBinding.toolbarBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        mBaseBinding.toolbarBack.setOnClickListener(v -> finish());
     }
 
     /**
      * 设置标题
+     *
      * @param title
      */
     public void setTitle(String title) {
@@ -95,9 +82,10 @@ public class MvvmBaseActivity<SV extends ViewDataBinding> extends AppCompatActiv
 
     /**
      * 设置整个ToolBar是否显示
+     *
      * @param visible
      */
-    public void setToolbarVisible(int visible){
+    public void setToolbarVisible(int visible) {
         mBaseBinding.toolbar.setVisibility(visible);
     }
 

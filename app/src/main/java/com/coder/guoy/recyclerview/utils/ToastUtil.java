@@ -20,7 +20,7 @@ public class ToastUtil {
 
     public static void show(String msg) {
         View view = View.inflate(App.getInstance(), R.layout.dialog_toast, null);
-        TextView tvMsg = (TextView) view.findViewById(R.id.tv_toast_msg);
+        TextView tvMsg = view.findViewById(R.id.tv_toast_msg);
         tvMsg.setText(msg);
         //防止多次点击按钮出现很多toast一直不消失
         if (toast != null) {

@@ -115,7 +115,7 @@ public class WelfareActivity extends MvvmBaseActivity<ActivityWelfareBinding> {
         // 第一个参数为Context
         // 第二个参数为数据，上拉加载的原理就是分页，所以我设置常量PAGE_COUNT=10，即每次加载10个数据
         // 第三个参数为hasMore，是否有新数据
-        adapter = new WelfareAdapter(this, mList, mList.size() > 0 ? true : false);
+        adapter = new WelfareAdapter(this, mList, mList.size() > 0);
         mLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
         bindingView.recyclerview.setLayoutManager(mLayoutManager);
         bindingView.recyclerview.setAdapter(adapter);

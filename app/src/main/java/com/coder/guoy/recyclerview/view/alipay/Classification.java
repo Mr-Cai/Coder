@@ -53,7 +53,7 @@ public class Classification extends LinearLayout {
 
     private void init(Context context, @Nullable AttributeSet attrs) {
         View view = LayoutInflater.from(context).inflate(R.layout.classification_zfb, this, true);
-        recyclerView = (RecyclerView) view.findViewById(R.id.classification_zfb);
+        recyclerView = view.findViewById(R.id.classification_zfb);
     }
 
     /**

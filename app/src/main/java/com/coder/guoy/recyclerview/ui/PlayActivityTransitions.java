@@ -27,10 +27,10 @@ public class PlayActivityTransitions extends AppCompatActivity implements View.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_transitions);
-        TextView textView = (TextView) findViewById(R.id.textview_title);
-        FrameLayout layout = (FrameLayout) findViewById(R.id.toolbar_back);
-        layoutGo = (LinearLayout) findViewById(R.id.layout_go);
-        imageView = (ImageView) findViewById(R.id.image_go);
+        TextView textView = findViewById(R.id.textview_title);
+        FrameLayout layout = findViewById(R.id.toolbar_back);
+        layoutGo = findViewById(R.id.layout_go);
+        imageView = findViewById(R.id.image_go);
         textView.setText("ActivityTransitions|转场动画");
         layout.setOnClickListener(this);
         layoutGo.setOnClickListener(this);

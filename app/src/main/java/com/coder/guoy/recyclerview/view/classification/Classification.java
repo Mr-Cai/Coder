@@ -57,18 +57,18 @@ public class Classification extends LinearLayout implements View.OnClickListener
 
     private void init(Context context, @Nullable AttributeSet attrs) {
         View view = LayoutInflater.from(context).inflate(R.layout.classification, this, true);
-        icon = (ImageView) view.findViewById(R.id.icon);
-        title = (TextView) view.findViewById(R.id.title);
-        contentLayout1 = (LinearLayout) view.findViewById(R.id.content_layout1);
-        contentLayout2 = (LinearLayout) view.findViewById(R.id.content_layout2);
-        contentText1 = (TextView) view.findViewById(R.id.textview1);
-        contentText2 = (TextView) view.findViewById(R.id.textview2);
-        contentText3 = (TextView) view.findViewById(R.id.textview3);
-        contentText4 = (TextView) view.findViewById(R.id.textview4);
-        contentText5 = (TextView) view.findViewById(R.id.textview5);
-        contentText6 = (TextView) view.findViewById(R.id.textview6);
-        contentText7 = (TextView) view.findViewById(R.id.textview7);
-        contentText8 = (TextView) view.findViewById(R.id.textview8);
+        icon = view.findViewById(R.id.icon);
+        title = view.findViewById(R.id.title);
+        contentLayout1 = view.findViewById(R.id.content_layout1);
+        contentLayout2 = view.findViewById(R.id.content_layout2);
+        contentText1 = view.findViewById(R.id.textview1);
+        contentText2 = view.findViewById(R.id.textview2);
+        contentText3 = view.findViewById(R.id.textview3);
+        contentText4 = view.findViewById(R.id.textview4);
+        contentText5 = view.findViewById(R.id.textview5);
+        contentText6 = view.findViewById(R.id.textview6);
+        contentText7 = view.findViewById(R.id.textview7);
+        contentText8 = view.findViewById(R.id.textview8);
 
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.Classification);
         if (typedArray != null) {

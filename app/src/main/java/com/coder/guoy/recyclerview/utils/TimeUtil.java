@@ -341,11 +341,7 @@ public class TimeUtil {
         Date d1 = sdf.parse(s1);
         Date d2 = sdf.parse(getData());
         //比较
-        if (((d1.getTime() - d2.getTime()) / (24 * 3600 * 1000)) >= 1) {
-            return true;
-        } else {
-            return false;
-        }
+        return ((d1.getTime() - d2.getTime()) / (24 * 3600 * 1000)) >= 1;
     }
 
     public static boolean DateCompare(String data1, String data2) {
@@ -364,11 +360,7 @@ public class TimeUtil {
             return true;
         }
         //比较
-        if (((d1.getTime() - d2.getTime()) / (24 * 3600 * 1000)) >= 1) {
-            return true;
-        } else {
-            return false;
-        }
+        return ((d1.getTime() - d2.getTime()) / (24 * 3600 * 1000)) >= 1;
     }
 
     public static String timeFormat(String time) {

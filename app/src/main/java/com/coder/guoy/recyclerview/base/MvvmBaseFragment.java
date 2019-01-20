@@ -53,7 +53,7 @@ public abstract class MvvmBaseFragment<SV extends ViewDataBinding> extends Fragm
         bindingView = DataBindingUtil.inflate(getActivity().getLayoutInflater(), setContent(), null, false);
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         bindingView.getRoot().setLayoutParams(params);
-        mContainer = (RelativeLayout) ll.findViewById(R.id.container);
+        mContainer = ll.findViewById(R.id.container);
         mContainer.addView(bindingView.getRoot());
         return ll;
     }
