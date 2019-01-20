@@ -2,8 +2,8 @@ package com.coder.guoy.recyclerview.ui.recyclerview;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
 import android.view.View;
 
 import com.coder.guoy.recyclerview.Constants;

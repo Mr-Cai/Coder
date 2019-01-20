@@ -15,7 +15,7 @@
             android:background="@color/colorPageBg"
             android:orientation="vertical">
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
@@ -44,7 +44,7 @@
                     android:textColor="@color/colorWrite"
                     android:textSize="18sp"/>
 
-            </android.support.v7.widget.Toolbar>
+            </androidx.appcompat.widget.Toolbar>
 
             <RelativeLayout
                 android:id="@+id/container"

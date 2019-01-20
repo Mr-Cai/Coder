@@ -2,8 +2,8 @@
 
 package com.coder.guoy.recyclerview.ui.cache;
 
-import android.support.annotation.IntDef;
-import android.support.annotation.NonNull;
+import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
 
 import com.coder.guoy.recyclerview.Constants;
 import com.coder.guoy.recyclerview.api.bean.ImageBean;

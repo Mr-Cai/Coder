@@ -38,7 +38,7 @@ public class TagCloudView extends ViewGroup implements Runnable, TagsAdapter.OnD
     private int left, right, top, bottom;
 
     private MarginLayoutParams layoutParams;
-    private int minSize;    
+    private int minSize;
 
     private boolean isOnTouch = false;
     private Handler handler = new Handler(Looper.getMainLooper());
@@ -94,7 +94,7 @@ public class TagCloudView extends ViewGroup implements Runnable, TagsAdapter.OnD
         }
         int screenWidth = point.x;
         int screenHeight = point.y;
-        minSize = screenHeight < screenWidth ? screenHeight : screenWidth;        
+        minSize = screenHeight < screenWidth ? screenHeight : screenWidth;
     }
 
     public void setAutoScrollMode(int mode) {
@@ -206,11 +206,11 @@ public class TagCloudView extends ViewGroup implements Runnable, TagsAdapter.OnD
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
-        left = l; 
-        right = r; 
-        top = t; 
+        left = l;
+        right = r;
+        top = t;
         bottom = b;
-        
+
         for (int i = 0; i < getChildCount(); i++) {
             View child = getChildAt(i);
             if (child.getVisibility() != GONE) {
